@@ -1,11 +1,11 @@
-def open_File():
+def open_file():
     with open('../password.txt', 'r') as f:
         password_list = f.readlines()
     return password_list
 
 
 def part1():
-    password_list = open_File()
+    password_list = open_file()
     valid = 0
     for parts in password_list:
         parts = parts.split(' ')
@@ -18,10 +18,10 @@ def part1():
             if min_range <= freq <= max_range:
                 valid += 1
     print(valid)
-
+    
 
 def part2():
-    password_list = open_File()
+    password_list = open_file()
     valid = 0
     for parts in password_list:
         parts = parts.split(' ')
@@ -33,5 +33,3 @@ def part2():
             if (check1 is char and check2 is not char) or (check1 is not char and check2 is char):
                 valid += 1
     print(valid)
-
-
