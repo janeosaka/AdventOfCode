@@ -34,7 +34,3 @@ def part2():
         else:
             temp_setlist = temp_setlist.intersection(i.strip())
     return sum([len(x) for x in valid])
-
-
-print(part1())
-print(part2())
