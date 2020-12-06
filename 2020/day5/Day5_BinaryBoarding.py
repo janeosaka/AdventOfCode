@@ -20,19 +20,6 @@ def part1():
 print(part1())
 
 
-# def part2():
-#     seats = sorted(part1())
-#     enumerate(seats)
-#     for i, seat in seats:
-#         if min(seats) < seat < max(seats):
-#             if seats[i + 1] - seat == 2:
-#                 return seat + 1
-#             else:
-#                 return 0
-#
-#
-# print(part2())
-
 def part2():
     seat_list = part1()
     for i, seats in enumerate(seat_list):
